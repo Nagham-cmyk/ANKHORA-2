@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the wonders of ancient Egypt with ANKHORA.">
+  <title>ANKHORA | Discover Ancient Egypt</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Cinematic opening -->
+  <section class="intro" id="intro">
+    <video id="introVideo" autoplay muted playsinline>
+      <source src="museum-intro.mp4" type="video/mp4">
+    </video>
+
+    <div class="intro-shade"></div>
+
+    <div class="intro-content">
+      <p class="eyebrow">A JOURNEY THROUGH TIME</p>
+      <h1>ANKHORA</h1>
+      <p>Where history comes alive.</p>
+      <button id="skipIntro" class="outline-button">
+        Skip Intro →
+      </button>
+    </div>
+  </section>
+
+  <header class="site-header">
+    <a class="logo" href="#home">ANKHORA<span>.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#artifacts">Artifacts</a>
+      <a href="#name-game">Name in Hieroglyphs</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">THE LEGACY OF ANCIENT EGYPT</p>
+        <h1>Discover the<br><span>Timeless Wonders</span></h1>
+        <p>
+          Explore the stories, treasures, and mysteries
+          of one of the world's greatest civilizations.
+        </p>
+        <a class="gold-button" href="#artifacts">
+          Explore the Collection
+        </a>
+      </div>
+
+      <div class="hero-frame">
+        <img
+          src="images/museum.jpg"
+          alt="Ancient Egyptian museum interior"
+        >
+        <span class="frame-label">A CIVILIZATION THAT LIVES ON</span>
+      </div>
+    </section>
+
+    <!-- Artifact collection -->
+    <section class="artifacts section" id="artifacts">
+      <div class="section-heading">
+        <p class="eyebrow">HISTORY IN EVERY DETAIL</p>
+        <h2>Explore the <span>Collection</span></h2>
+        <p>Discover the stories behind remarkable ancient treasures.</p>
+      </div>
+
+      <div class="artifact-grid">
+        <article class="artifact-card">
+          <img src="images/tutankhamun.jpg"
+               alt="Mask of Tutankhamun">
+          <div class="artifact-info">
+            <span class="artifact-number">01 / ROYAL TREASURE</span>
+            <h3>The Mask of Tutankhamun</h3>
+            <p>
+              This iconic golden funerary mask belonged to
+              Pharaoh Tutankhamun and is one of ancient Egypt's
+              most recognized treasures.
+            </p>
+          </div>
+        </article>
+
+        <article class="artifact-card">
+          <img src="images/rosetta-stone.jpg"
+               alt="The Rosetta Stone">
+          <div class="artifact-info">
+            <span class="artifact-number">02 / LANGUAGE</span>
+            <h3>The Rosetta Stone</h3>
+            <p>
+              Inscribed with three versions of a decree, the
+              Rosetta Stone helped scholars decipher Egyptian
+              hieroglyphs.
+            </p>
+          </div>
+        </article>
+
+        <article class="artifact-card">
+          <img src="images/narmer-palette.jpg"
+               alt="The Narmer Palette">
+          <div class="artifact-info">
+            <span class="artifact-number">03 / EARLY HISTORY</span>
+            <h3>The Narmer Palette</h3>
+            <p>
+              This ceremonial palette contains important
+              imagery associated with King Narmer and the
+              early history of ancient Egypt.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Name game -->
+    <section class="name-game section" id="name-game">
+      <div class="game-frame">
+        <p class="eyebrow">YOUR NAME, ANCIENT STYLE</p>
+        <h2>Write Your Name in <span>Hieroglyphs</span></h2>
+        <p>
+          Enter your name and discover a playful,
+          hieroglyph-inspired version of it.
+        </p>
+
+        <form id="nameForm">
+          <label for="visitorName">Your name</label>
+          <input
+            id="visitorName"
+            type="text"
+            placeholder="Enter your name in English"
+            maxlength="30"
+            required
+          >
+          <button class="gold-button" type="submit">
+            Reveal My Name
+          </button>
+        </form>
+
+        <div class="name-result" id="nameResult" aria-live="polite">
+          <p>Your ancient-style name will appear here.</p>
+          <div id="hieroglyphOutput"></div>
+          <button id="downloadName" class="outline-dark" hidden>
+            Download My Design
+          </button>
+        </div>
+
+        <p class="game-note">
+          This is a creative symbol game, not an authentic
+          hieroglyphic translation.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">ANKHORA<span>.</span></a>
+    <p>Preserving the past. Inspiring the future.</p>
+    <p class="copyright">© 2026 ANKHORA. Educational project.</p>
+  </footer>
+</body>
+</html>
