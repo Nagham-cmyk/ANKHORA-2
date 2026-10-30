@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANKHORA | Egyptian Museum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- INTRO VIDEO -->
+    <section class="intro" id="intro">
+
+        <video id="introVideo" autoplay muted playsinline>
+            <source src="Grand.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <div class="intro-shade"></div>
+
+        <div class="intro-content">
+            <p class="eyebrow">A JOURNEY THROUGH TIME</p>
+            <h1>ANKHORA</h1>
+            <p>Where history comes alive.</p>
+            <button id="skipIntro" class="outline-button">
+                Skip Intro →
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <div class="logo">ANKHORA</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#artifacts">Artifacts</a>
+            <a href="#game">Name Game</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <p class="eyebrow">DISCOVER ANCIENT EGYPT</p>
+
+            <h1>
+                Explore The<br>
+                Wonders Of Egypt
+            </h1>
+
+            <p>
+                Step into a world of ancient treasures,
+                remarkable stories, and timeless civilization.
+            </p>
+
+            <a href="#artifacts" class="main-button">
+                Explore Artifacts
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="intro.jpg" alt="Ancient Egyptian Museum">
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <p class="eyebrow">OUR STORY</p>
+
+        <h2>Discover The Egyptian Civilization</h2>
+
+        <p>
+            Ancient Egypt is one of the world's most fascinating
+            civilizations. Its monuments, art, and treasures
+            tell stories of a remarkable past.
+        </p>
+
+        <p>
+            ANKHORA invites you to explore some of these
+            historical treasures and discover their stories.
+        </p>
+
+    </section>
+
+
+    <!-- ARTIFACTS -->
+    <section class="artifacts" id="artifacts">
+
+        <p class="eyebrow">HISTORY AND TREASURES</p>
+
+        <h2>Explore Ancient Artifacts</h2>
+
+        <div class="artifact-container">
+
+            <!-- ARTIFACT 1 -->
+            <div class="artifact-card">
+                <img src="masktut.jpg" alt="Tutankhamun's Golden Mask">
+
+                <div class="artifact-info">
+                    <h3>The Golden Mask</h3>
+
+                    <p>
+                        The famous funerary mask of King Tutankhamun,
+                        discovered in his tomb in 1922.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- ARTIFACT 2 -->
+            <div class="artifact-card">
+                <img src="narmer.jpg" alt="Narmer Palette">
+
+                <div class="artifact-info">
+                    <h3>The Narmer Palette</h3>
+
+                    <p>
+                        An ancient ceremonial object associated
+                        with King Narmer and the unification of Egypt.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- ARTIFACT 3 -->
+            <div class="artifact-card">
+                <img src="stone.jpg" alt="Ancient Egyptian Stone Artifact">
+
+                <div class="artifact-info">
+                    <h3>Ancient Stone Artifact</h3>
+
+                    <p>
+                        Ancient Egyptian stone objects reveal
+                        details about art, beliefs, and daily life.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NAME GAME -->
+    <section class="name-game" id="game">
+
+        <p class="eyebrow">A PERSONAL JOURNEY</p>
+
+        <h2>Your Name In Ancient Symbols</h2>
+
+        <p>
+            Enter your name and discover a decorative
+            hieroglyph-inspired version of it!
+        </p>
+
+        <form id="nameForm">
+
+            <input
+                type="text"
+                id="visitorName"
+                placeholder="Enter your name in English"
+                maxlength="30"
+                required
+            >
+
+            <button type="submit" class="main-button">
+                Transform My Name
+            </button>
+
+        </form>
+
+
+        <div id="nameResult" hidden>
+
+            <p>Your name, inspired by ancient Egyptian symbols:</p>
+
+            <div id="hieroglyphOutput"></div>
+
+            <button
+                type="button"
+                id="downloadName"
+                class="main-button"
+                hidden
+            >
+                Download Your Name
+            </button>
+
+        </div>
+
+        <small>
+            This is a decorative interpretation,
+            not an authentic ancient Egyptian transliteration.
+        </small>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <h2>ANKHORA</h2>
+
+        <p>Discover the past. Explore the history.</p>
+
+        <p>© 2026 ANKHORA. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
